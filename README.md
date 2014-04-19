@@ -1,4 +1,4 @@
-node-useful
+notes
 ===========
 
-Node.js code which may be useful.
+My study notes.
