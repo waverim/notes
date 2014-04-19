@@ -17,7 +17,8 @@ io.sockets.on('connection', function(socket) {
 		socket.broadcast.emit('announcement', name + ' join the chat.');
 	    });
 
-	socket.on('text', function (msg) {
+	socket.on('text', function (msg, fn) {
 		socket.broadcast.emit('text', socket.nickname, msg);
+		fn(Date.now());
 	    });
 });

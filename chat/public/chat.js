@@ -19,12 +19,18 @@ window.onload = function () {
 	li.className = 'message';
 	li.innerHTML = '<b>' + from + '</b>: ' + text;
 	document.getElementById('messages').appendChild(li);
+
+	return li;
     }
 
     var input = document.getElementById('input');
     document.getElementById('form').onsubmit = function () {
-	addMessage('me', input.value);
-	socket.emit('text', input.value);
+	var li = addMessage('me', input.value);
+
+	socket.emit('text', input.value, function (date) {
+		li.className = 'confirmed';
+		li.title = date;
+	    });
 	
 	input.value = '';
 	input.focus();
