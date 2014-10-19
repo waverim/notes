@@ -1,0 +1,34 @@
+<!--
+基于jQuery的自定义邮件的小功能
+-->
+
+<style>
+.custom-menu {
+    z-index:1000;
+    position: absolute;
+    background-color:#888;
+    border: 1px solid #ccc;
+    color: #fff;
+    padding: 2px;
+    width: 100px;
+}
+</style>
+
+<ul class='custom-menu' style="display:none">
+    <li>保存</li>
+    <li>打印…</li>
+</ul>
+
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script>
+$(document).bind("contextmenu", function(event) {
+    event.preventDefault();
+    $("ul.custom-menu")
+        .show()
+        .css({top: event.pageY + "px", left: event.pageX + "px"});
+});
+
+$(document).bind("click", function(event) {
+    $("ul.custom-menu").hide();
+});
+</script>
