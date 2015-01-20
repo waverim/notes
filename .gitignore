@@ -1,0 +1,8 @@
+# Emacs
+*~
+
+# Mac
+.DS_Store
+
+# npm
+.co/node_modules/
