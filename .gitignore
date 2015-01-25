@@ -6,3 +6,6 @@
 
 # npm
 co/node_modules/
+
+# idea
+.idea/
