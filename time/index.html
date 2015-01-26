@@ -4,19 +4,36 @@
     <meta charset="UTF-8">
     <title></title>
     <style>
+        body {
+            text-align: center;
+        }
+        div {
+            height: 50px;
+            line-height: 50px;
+        }
         input {
             width: 100px;
+            text-align: center;
+            outline: none;
+        }
+        .error {
+            color: red;
         }
     </style>
 </head>
 <body>
     <div>
-        <input id="input-year" type="number">年
-        <input id="input-month" type="number">月
-        <input id="input-day" type="number">日
-        <input id="input-hour" type="number">:
-        <input id="input-min" type="number">:
+        <input id="input-year" type="number"> 年
+        <input id="input-month" type="number"> 月
+        <input id="input-day" type="number"> 日
+    </div>
+    <div>
+        <input id="input-hour" type="number"> :
+        <input id="input-min" type="number"> :
         <input id="input-sec" type="number">
+    </div>
+    <div class="error" id="error"></div>
+    <div>
         <button id="btn">开始</button>
     </div>
     <div>
@@ -26,6 +43,6 @@
         <span id="show-sec">0</span>秒
     </div>
 
-    <script src="js/index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
