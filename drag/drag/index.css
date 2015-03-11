@@ -1,0 +1,132 @@
+*{ margin:0; padding:0; }
+li {list-style: none}
+a, button {cursor: pointer}
+
+.hide { display: none; }
+
+body {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: #f7f7f7;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.main {
+    width: 900px;
+    float: left;
+}
+
+.pool {
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+}
+
+.subject {
+    border: 2px solid #72b2e6;
+    padding: 8px;
+    position: absolute;
+}
+
+.subject1 {
+    top: 180px;
+    left: 40px;
+}
+.subject2 {
+    top: 120px;
+    left: 80px;
+}
+.subject3 {
+    top: 180px;
+    left: 140px;
+}
+.subject4 {
+    top: 240px;
+    left: 160px;
+}
+.subject5 {
+    top: 180px;
+    left: 400px;
+}
+
+.subject1:after, .subject3:after, .subject4:after {
+    position: absolute;
+    top: 38px;
+    left: 20px;
+    width: 300px;
+}
+.subject2:after, .subject5:after {
+    position: absolute;
+    top: 0;
+    left: 180px;
+    width: 200px;
+}
+
+.subject1:after {
+    content: "主语";
+}
+.subject2:after {
+    content: "形容词后置，扁而宽的树叶";
+    position: absolute;
+    top: 10px;
+    left: 180px;
+    width: 200px;
+}
+.subject3:after {
+    content: "谓语，吸收能量";
+}
+.subject4:after {
+    content: "吸收能量和二氧化碳，并列结构";
+}
+.subject5:after {
+    content: "以生存，表目的";
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    width: 200px;
+}
+
+.subject-over {
+    background-color: #72b2e6;
+}
+
+.sentence {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 0 0 20px 20px;
+    padding: 20px;
+}
+
+.clause {
+    display: inline-block;
+    padding: 8px 0;
+}
+
+.useless {
+    color: #aaa;
+}
+
+.active {
+    background-color: #72B2E6;
+    color: #fff;
+}
+
+.moving {
+    background: #fff;
+    border: 1px solid #000;
+    color: #000;
+    padding: 8px;
+}
+
+
+
+aside {
+    width: 100px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-left: 20px;
+    float: left;
+}

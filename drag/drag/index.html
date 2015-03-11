@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <button>Home</button>
+        <div>Level2<br>当前积分</div>
+        <div id="score">0</div>
+    </header>
+
+    <div class="main">
+        <div class="pool" id="pool">
+            <div class="subject subject1" id="subject1">Leaves,</div>
+            <div class="subject subject2 hide" id="subject2">usually broad and flat,</div>
+            <div class="subject subject3 hide" id="subject3">take in energy from sunlight</div>
+            <div class="subject subject4 hide" id="subject4">and carbon dioxide from the air</div>
+            <div class="subject subject5 hide" id="subject5">to survive.</div>
+        </div>
+        <div class="sentence">
+            <div class="clause useless" id="clause1">Leaves,</div>
+            <div class="clause active" id="clause2" draggable="true">usually broad and flat,</div>
+            <div class="clause" id="clause3" draggable="false">take in energy from sunlight</div>
+            <div class="clause" id="clause4" draggable="false">and carbon dioxide from the air</div>
+            <div class="clause" id="clause5" draggable="false">to survive.</div>
+        </div>
+    </div>
+
+    <aside></aside>
+
+    <script src="index.js"></script>
+</body>
+</html>
